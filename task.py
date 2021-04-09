@@ -20,7 +20,7 @@ class Bank:
     self.client_list = []
 
   def add_client(self,client):
-    self.client_list.push(client)
+    self.client_list.append(client)
 
 if __name__ == "__main__":
   print("Start by add first bank\n Bank name:")
@@ -33,7 +33,7 @@ if __name__ == "__main__":
   cl_name = input()
   print("client start money")
   cl_money = input()
-  client = Client(cl_name,Bank1.name,1234,cl_money)
-  Bank.add_client(client)
+  client1 = Client(cl_name,Bank1.name,1234,cl_money)
+  Bank1.add_client(client1)
   print("Client added!")
   print("cnd...")
